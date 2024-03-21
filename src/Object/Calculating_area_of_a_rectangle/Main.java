@@ -1,4 +1,4 @@
-package Object.Calculating_area_of_a_rectangle_using_class_and_methods;
+package Object.Calculating_area_of_a_rectangle;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
