@@ -1,4 +1,6 @@
-package inheritance;
+package inheritance.animal;
+
+import inheritance.animal.Animal;
 
 class Pet extends Animal {
 
