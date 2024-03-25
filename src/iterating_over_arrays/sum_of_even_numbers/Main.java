@@ -1,4 +1,4 @@
-package Iterating_over_arrays.sum_of_even_numbers;
+package iterating_over_arrays.sum_of_even_numbers;
 
 import java.util.Scanner;
 

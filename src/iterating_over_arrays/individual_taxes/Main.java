@@ -1,4 +1,4 @@
-package Iterating_over_arrays.individual_taxes;
+package iterating_over_arrays.individual_taxes;
 
 import java.util.Scanner;
 

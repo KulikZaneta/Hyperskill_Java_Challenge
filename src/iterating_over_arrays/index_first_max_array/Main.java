@@ -1,4 +1,4 @@
-package Iterating_over_arrays.max_value_array;
+package iterating_over_arrays.index_first_max_array;
 
 import java.util.Scanner;
 
@@ -9,18 +9,16 @@ public class Main {
         int size = scanner.nextInt();
         int[] array = new int[size];
 
-        for (int i = 0 ; i < array.length; i++) {
-            array[i] = scanner.nextInt();
-        }
+        int maxIndex = 0;
 
-        int max = 0;
-        for (int i : array) {
-            if (i > max) {
-                max = i;
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scanner.nextInt();
+
+            if (array[i] > array[maxIndex]) {
+                maxIndex = i;
             }
         }
-
-        System.out.println(max);
+        System.out.println(maxIndex);
     }
 }
 

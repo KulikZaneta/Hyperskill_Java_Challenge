@@ -1,4 +1,4 @@
-package Object.Calculating_area_of_a_rectangle;
+package object.calculating_area_of_a_rectangle;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
@@ -39,3 +39,5 @@ public class Main {
         System.out.println(df.format(rectangle.calculateArea()));
     }
 }
+
+

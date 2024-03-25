@@ -1,4 +1,4 @@
-package Iterating_over_arrays.check_if_an_array_contains_two_numbers;
+package iterating_over_arrays.check_if_an_array_contains_two_numbers;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Object.Army;
+package object.army;
 
 class Army {
 

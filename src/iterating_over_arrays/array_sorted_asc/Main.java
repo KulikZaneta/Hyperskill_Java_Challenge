@@ -1,4 +1,4 @@
-package Iterating_over_arrays.array_sorted_asc;
+package iterating_over_arrays.array_sorted_asc;
 
 import java.util.Arrays;
 import java.util.Scanner;

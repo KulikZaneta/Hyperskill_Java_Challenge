@@ -1,4 +1,4 @@
-package Iterating_over_arrays.alphabetical_order;
+package iterating_over_arrays.alphabetical_order;
 
 import java.util.Scanner;
 

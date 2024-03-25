@@ -1,4 +1,4 @@
-package Iterating_over_arrays.does_an_array_contain_N;
+package iterating_over_arrays.does_an_array_contain_N;
 
 import java.util.Scanner;
 

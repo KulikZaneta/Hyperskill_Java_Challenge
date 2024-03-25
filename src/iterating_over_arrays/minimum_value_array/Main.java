@@ -1,5 +1,6 @@
-package Iterating_over_arrays.index_first_max_array;
+package iterating_over_arrays.minimum_value_array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -9,16 +10,21 @@ public class Main {
         int size = scanner.nextInt();
         int[] array = new int[size];
 
-        int maxIndex = 0;
-
         for (int i = 0; i < array.length; i++) {
             array[i] = scanner.nextInt();
+        }
 
-            if (array[i] > array[maxIndex]) {
-                maxIndex = i;
+        Arrays.sort(array);
+        System.out.println(array[0]);
+
+       /* int min = array[0];
+
+        for (int i = 0; i < array.length; i++) {
+            if(array[i] < min) {
+                min = array[i];
             }
         }
-        System.out.println(maxIndex);
+        System.out.println(min);*/
     }
 }
 
