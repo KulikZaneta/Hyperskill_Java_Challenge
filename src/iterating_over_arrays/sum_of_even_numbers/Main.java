@@ -5,16 +5,27 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         String input = scanner.nextLine();
-        String[] numbers = input.split(",");
+        String[] numbersString = input.split(",");
+        int[] numbers = new int[numbersString.length];
+
+        for (int i = 0; i < numbersString.length; i++) {
+            numbers[i] = Integer.parseInt(numbersString[i].trim());
+        }
+
+        int sum = sumOfEvenNumbers(numbers);
+        System.out.println(sum);
+    }
+
+    public static int sumOfEvenNumbers(int[] numbers) {
         int sum = 0;
 
         for (int i = 0; i < numbers.length; i++) {
-            int num = Integer.parseInt(numbers[i].trim());
-            if (num % 2 == 0) {
-                sum += num;
+            if (numbers[i] % 2 == 0) {
+                sum += numbers[i];
             }
         }
-        System.out.println(sum);
+        return sum;
     }
 }

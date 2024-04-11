@@ -1,4 +1,4 @@
-package iterating_over_arrays.index_first_max_array;
+package iterating_over_arrays.sum_elements_greater_than_n;
 
 import java.util.Scanner;
 
@@ -8,23 +8,24 @@ public class Main {
 
         int size = scanner.nextInt();
         int[] array = new int[size];
+        int n = scanner.nextInt();
 
         for (int i = 0; i < array.length; i++) {
             array[i] = scanner.nextInt();
         }
 
-        int firstMaxIndex = findFirstMaxIndex(array);
-        System.out.println(firstMaxIndex);
+        int result = sumElementsGreaterThanN(array, n);
+        System.out.println(result);
     }
-    public static int findFirstMaxIndex(int[] array) {
-        int maxIndex = 0;
 
+    public static int sumElementsGreaterThanN(int[] array, int n) {
+        int result = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] > array[maxIndex]) {
-                maxIndex = i;
+            if (n < array[i]) {
+                result += array[i];
             }
         }
-        return maxIndex;
+        return result;
     }
 }
 

@@ -14,21 +14,25 @@ public class Main {
         }
 
         int n = scanner.nextInt();
+        boolean isContain = isContainN(array, n);
+        System.out.println(isContain);
+    }
+
+    public static boolean isContainN(int[] array, int n) {
         boolean isContain = false;
 
-        for (int i = 1; i < size; i++) {
+        for (int i = 1; i < array.length; i++) {
             if (array[i] == n) {
                 isContain = true;
                 break;
             }
         }
-
-      /*  for (int i : array) {
+        return isContain;
+    }
+}
+    /*  for (int i : array) {
             if (i == n) {
                 isContain = true;
                 break;
             }
         }*/
-        System.out.println(isContain);
-    }
-}

@@ -13,18 +13,12 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             array[i] = scanner.nextInt();
         }
+        minimumValue(array);
+    }
 
+    public static void minimumValue(int[] array) {
         Arrays.sort(array);
         System.out.println(array[0]);
-
-       /* int min = array[0];
-
-        for (int i = 0; i < array.length; i++) {
-            if(array[i] < min) {
-                min = array[i];
-            }
-        }
-        System.out.println(min);*/
     }
 }
 

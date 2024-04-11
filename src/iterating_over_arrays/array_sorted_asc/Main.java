@@ -14,11 +14,18 @@ public class Main {
             array[i] = scanner.nextInt();
         }
 
+        boolean isAsc = isSortedAsc(array);
+        System.out.println(isAsc);
+    }
+
+    public static boolean isSortedAsc(int[] array) {
+
         int[] sortedArray = Arrays.copyOf(array, array.length);
         Arrays.sort(sortedArray);
 
         boolean isAsc = Arrays.equals(array, sortedArray);
-        System.out.println(isAsc);
+
+        return isAsc;
     }
     /*
         boolean isAsc = false;

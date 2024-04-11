@@ -13,6 +13,11 @@ public class Main {
             array[i] = scanner.nextInt();
         }
 
+        int max = maxProductOfAdjacentElements(array);
+        System.out.println(max);
+    }
+
+    public static int maxProductOfAdjacentElements(int[] array) {
         int max = 0;
         for (int i = 0; i < array.length - 1; i++) {
             int product = array[i] * array[i + 1];
@@ -20,8 +25,7 @@ public class Main {
                 max = product;
             }
         }
-        System.out.println(max);
-        scanner.close();
+        return max;
     }
 }
 
